@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p> Hay nhap so dien da su dung !</p>
+<input id="so1" size="15px" placeholder="Hay nhap so dien! ">
+<button id="hienthi" type="button" onclick="hienthi1()"> Dap an</button>
+<p id="dapan"> Gia dien </p>
+<select>
+    <option> </option>
+</select>
+<script>
+
+    let sodien= document.getElementById('so1');
+    let hoadon;
+
+    function hienthi1() {
+        if (sodien > 401){
+            hoadon=parseFloat(sodien.value)* 2.972;
+            document.getElementById('hienthi').innerHTML= 'Gia tien dien la: ' + hoadon;
+        } else if (sodien > 301){
+            hoadon=parseFloat(sodien.value)* 2.834;
+            document.getElementById('hienthi').innerHTML= 'Gia tien dien la: ' + hoadon;
+        } else if (sodien > 201){
+            hoadon=parseFloat(sodien.value)* 2.536;
+            document.getElementById('hienthi').innerHTML= 'Gia tien dien la: ' + hoadon;
+        } else if (sodien > 101) {
+            hoadon=parseFloat(sodien.value)* 2.014;
+            document.getElementById('hienthi').innerHTML= 'Gia tien dien la: ' + hoadon;
+        } else if (sodien > 51) {
+            hoadon=parseFloat(sodien.value)* 1.734;
+            document.getElementById('hienthi').innerHTML= 'Gia tien dien la: ' + hoadon;
+        } else {
+            hoadon=parseFloat(sodien.value)* 1.678;
+            document.getElementById('hienthi').innerHTML= 'Gia tien dien la: ' + hoadon;
+        }
+
+    }
+
+</script>
+
+
+
+</body>
+</html>

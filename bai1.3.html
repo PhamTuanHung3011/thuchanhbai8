@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<input id="nhapso" size="10px" placeholder="Nhap canh a! ">
+<button id="tinhtoan" type="button" onclick="tinhdientich()"> Tính toán</button>
+<p id="dapan" > Hiển thị đáp án</p>
+
+<script>
+  let canhvuong = document.getElementById('nhapso');
+  let dientich;
+
+  function tinhdientich(){
+    dientich = parseFloat(canhvuong.value)**2;
+    document.getElementById('dapan').innerHTML='dien tich hinh vuong la: '+ dientich;
+  }
+
+
+</script>
+
+</body>
+</html>

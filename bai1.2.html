@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input id="nhapso" placeholder="Nhap met">
+<button id="quydoi" type="button" onclick="chuyendoi()"> Quy doi</button>
+<br>
+<p id="dapan" > Toi dang doi ban quy doi </p>
+
+<script>
+    let mett = document.getElementById('nhapso');
+    let feett;
+
+
+
+    function chuyendoi(){
+        feett = parseFloat(mett.value) * 3.2080;
+        document.getElementById('dapan').innerHTML=feett;
+        console.log(feett);
+    }
+
+</script>
+
+<!--<script>-->
+
+<!--    let mett= parseFloat(prompt('Nhap vao met'));-->
+<!--    let feett;-->
+<!--    feett=mett*3.2808;-->
+<!--    console.log(feett);-->
+<!--    alert(feett);-->
+
+
+<!--</script>-->
+
+
+
+</body>
+</html>

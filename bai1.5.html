@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input id="canha" size="5px" placeholder="canh 1">
+<input id="canhb" size="5px" placeholder="canh 2"><br>
+<button id="hienthi" type="button" onclick="hienthi1()"> Dap an</button>
+<p id="dapan"> Dien tich hinh tam giac vuong </p>
+
+<script>
+
+    let canh1= document.getElementById('canha');
+    let canh2= document.getElementById('canhb');
+
+    function hienthi1(){
+
+        let dientich = (parseFloat(canh1.value) * parseFloat(canh2.value))/2;
+        document.getElementById('dapan').innerHTML='Dien tich tam giac vuong '+ dientich;
+
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

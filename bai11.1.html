@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+
+<input id="sotienvay" size="30" placeholder="Hay nhap khoan vay"><br>
+<input id="sothangvay" size="30" placeholder="Vay trong bao nhieu thang"><br>
+<input id="laisuatvay" size="30" placeholder="Lai suat vay bang bao nhieu"><br>
+<button id="chitiet" type="button" onclick="chitiet1()"> Xem chi tiết </button>
+<p > Tổng số tiền phải tra </p>
+<p id="hienthi"> </p>
+<p > Thang 1 </p>
+<p id=""> Thang 1 </p>
+
+<script>
+
+  let tiengoc= document.getElementById('sotienvay');
+  let thangvay = document.getElementById('sothangvay');
+  let laisuat = document.getElementById('laisuatvay');
+  let sotientra;
+  let laisuattungthang;
+  function chitiet1() {
+
+    sotientra = parseFloat(tiengoc.value) * ((1 + parseFloat(laisuat.value)) ** (parseFloat(thangvay.value)));
+    document.getElementById('hienthi').innerHTML = sotientra;
+
+    // while (laisuattungthang > 0){
+    //     laisuattungthang= parseFloat(tiengoc.value) * ((1 + parseFloat(laisuat.value)) ** (parseFloat(thangvay.value)))-parseFloat(tiengoc.value) * ((1 + parseFloat(laisuat.value)) ** (parseFloat(thangvay.value) -1))-
+    //
+    //     laisuattungthang --;
+    //     console.log(laisuattungthang);
+    // }
+
+  }
+
+</script>
+
+
+
+
+</body>
+</html>

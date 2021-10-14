@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input id="canh1" size="5px" placeholder="canh 1">
+<input id="canh2" size="5px" placeholder="canh 2"><br>
+<button id="hienthi" type="button" onclick="hienthi1()"> Dap an</button>
+<p id="dapan"> Dien tich hinh chu nhat </p>
+
+<script>
+
+  let canh1 = document.getElementById('canh1');
+  let canh2 = document.getElementById('canh2');
+
+
+  function hienthi1(){
+    let dientich= parseFloat(canh1.value) * parseFloat(canh2.value)
+    document.getElementById('dapan').innerHTML='Dien tich hinh chu nhat '+dientich;
+  }
+
+</script>
+
+
+
+
+</body>
+</html>
