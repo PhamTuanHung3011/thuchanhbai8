@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let doanhso= parseFloat(prompt('Hay nhap doanh thu thang!'));
+    let hoahong;
+
+
+    if (doanhso > 10000000){
+        hoahong = doanhso*0.06;
+        alert('Hoa hong cua ban thang nay' + hoahong);
+    } else if (doanhso > 8000000){
+        hoahong = doanhso*0.05;
+        alert('Hoa hong cua ban thang nay' + hoahong);
+    } else if (doanhso > 5.000000){
+        hoahong = doanhso*0.04
+        alert('Hoa hong cua ban thang nay' +hoahong)
+    } else {
+        alert('Thang nay ban khong nhan duoc hoa hong')
+    }
+
+</script>
+
+
+
+</body>
+</html>

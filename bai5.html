@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<table border="1"; width="100" >-->
+<!--    <tr>-->
+<!--        <td> Diem toan 1</td>-->
+<!--        <td>Diem ly 1</td>-->
+<!--        <td> Diem hoa 1</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+
+
+
+<script>
+    let diemtrungbinhkiemtra1= parseInt(prompt('Diem trung binh hoc ki 1'));
+    let diemthihocki1 = parseFloat(prompt('Hay nhap diem thi ki 1'));
+    // let diemthicuoiki = parseInt(prompt('Hay nhap diem thi cuoi cung'));
+    let diemtrungbinhkiemtra2=parseFloat(prompt('Diem trung binh hoc ki 2'));
+    let diemthihocki2 = parseInt(prompt('Nhap diem thi ki 2'))
+    let diemtrungbinhhocki1;
+    let diemtrungbinhhocki2;
+
+
+
+    diemtrungbinhhocki1 = ((diemtrungbinhkiemtra1 *2)+ diemthihocki1)/3;
+    console.log(diemtrungbinhhocki1)
+    diemtrungbinhhocki2 = ((diemtrungbinhkiemtra2*2)+diemthihocki2)/3;
+    console.log(diemtrungbinhhocki2)
+    let trungbinhnam = (diemtrungbinhhocki1 + (diemtrungbinhhocki2*2))/3
+    console.log(trungbinhnam);
+
+
+    if (trungbinhnam > 8) {
+        alert('Loai gioi')
+    } else if (trungbinhnam > 6.5){
+        alert('Loai kha')
+    } else if (trungbinhnam > 5){
+        alert('Loai trung binh')
+    } else if (trungbinhnam > 3.5){
+        alert('Loai yeu')
+    } else {
+        alert('Loai kem')
+    }
+
+
+</script>
+
+
+</body>
+</html>
